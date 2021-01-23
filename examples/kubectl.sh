@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# AUTHENTICATION
+# You can authenticate with your cloud account by injecting the right environment variables in your environment.
+# IS NOT recommended to expose credentials within the scripts, only for tests purposes. 
+# The best practice is to use your secret manager within the app and attach your Kubernetes config file.
+
+echo -e "* Simple kubectl client  demo..."
+
+kubectl version --client=true
+kubectl get nodes -o wide || echo -e "\n* Please attach your kubecfg file in your secrets manager"
