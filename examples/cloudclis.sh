@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# Case example:
+# Use case example:
 # You own Kubernetes clusters, your auto-scaling didn't work and you need emergency capacity?
 
 # AUTHENTICATION
