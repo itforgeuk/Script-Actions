@@ -76,9 +76,10 @@ Your script is well tested and published to your repo. You can now add it in the
     > git@github.com:yourrepo/yourproject
 2. Set your branch, tag or commit hash in the app field.
 3. Set your script path in the app field. Do not start with '/'.
-4. Set a shedule run if you like.
-5. Save
-6. Your script is ready.
+4. Be sure you have the necessary credentials set in yhe secret manager.
+5. Set a shedule run if you like.
+6. Save
+7. Your script is ready.
 
 ## Questions
 If you read **all the above** but you still have a question you can [write us](https://github.com/itforgeuk/Script-Actions/discussions/1)
