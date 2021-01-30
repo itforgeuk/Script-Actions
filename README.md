@@ -66,7 +66,7 @@ Following the best practices, we are not storing credentials, API keys or other 
 
 ## How to run your scripts in app
 Your script is well tested and published to your repo. You can now add it in the app:
-![Action configuration](screenshots/configuration.png =600x) ![Action manager](screenshots/manager.png =600x) 
+<img src="screenshots/configuration.png" alt="drawing" width="600"/><img src="screenshots/manager.png" alt="drawing" width="600"/>
 1. Set your git repository in the "GIT repo" app field. The format for public github repos is:
     > https://github.com/yourrepo/yourproject
 
