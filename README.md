@@ -78,3 +78,5 @@ Your script is well tested and published to your repo. You can now add it in the
 5. Save
 6. Your script is ready.
 
+## Questions
+If you read **all the above** but you still have a question you can [write us](https://github.com/itforgeuk/Script-Actions/discussions/1)
