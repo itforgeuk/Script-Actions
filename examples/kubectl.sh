@@ -8,4 +8,7 @@
 echo -e "* Simple kubectl client  demo..."
 
 kubectl version --client=true
+kubectl config get-contexts
+# Select your context or use the default
+# kubectl config use-context thiscluster
 kubectl get nodes -o wide || echo -e "\n* Please attach your kubecfg file in your secrets manager"
