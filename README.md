@@ -79,7 +79,7 @@ Your script is well tested and published to your repo. You can now add it in the
 4. Be sure you have the necessary credentials set in the secret manager.
 5. Set a shedule run if you like.
 6. Save
-7. Your script is ready.
+7. Your script is ready. Now you can do changes in the repo without edit the script in the app.
 
 ## Questions
 If you read **all the above** but you still have a question you can [write us](https://github.com/itforgeuk/Script-Actions/discussions/1)

@@ -7,10 +7,6 @@
 
 echo -e "* Simple kubectl client  demo..."
 
-if [ "$VPNKEY" != "" ]; then
-    # VPN key exist, give some time for the connection to be initiated
-    sleep 6
-fi
 kubectl version --client=true
 kubectl config get-contexts
 # Select your context or use the default

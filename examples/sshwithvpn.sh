@@ -8,10 +8,5 @@
 
 echo "You can access your DC via OVPN..."
 
-if [ "$VPNKEY" != "" ]; then
-    # Key is attached to your secret manager, we're waiting for some time for the VPN to be initiated.
-    sleep 6
-fi
-
 # Pull last 100 lines of the system logs
 ssh -oStrictHostKeyChecking=no -oUserKnownHostsFile=/dev/null user@my.vpnaccessiblehost.com tail -100 /var/log/syslog
