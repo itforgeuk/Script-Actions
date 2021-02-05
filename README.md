@@ -8,7 +8,7 @@ It is a unique solution that provides easy and fast access in a secure execution
 **You can build, sell, load and execute scripts from public or private repositories.**
 
 ## Security
-We use Kubernetes. Each execution environment, is dedicated with isolated storage, hardware and networking resources. 
+We use Kubernetes. Each execution environment is dedicated with isolated storage, hardware and networking resources. 
 The networking allows outbound traffic but inbound traffic is blocked.
 Following the best practices, we are not storing credentials, API keys or other secrets. This information is injected on-demand in the temporary execution environment which is destroyed after the execution.
 
@@ -25,7 +25,7 @@ Following the best practices, we are not storing credentials, API keys or other 
 * For business scheduled actions.
 * For servers management or scaling.
 * For profit & fun.
-* You are not a Developer but you need a tested script ready to run it on your phone? [Let us know](https://github.com/itforgeuk/Script-Actions/discussions/1)
+* **You are not a Developer but you need a tested script ready to run it on your phone?** [Let us know](https://github.com/itforgeuk/Script-Actions/discussions/1)
 
 ## How to build and test your scripts
 ### Requirements
@@ -34,7 +34,7 @@ Following the best practices, we are not storing credentials, API keys or other 
 * Your code execution duration must not exceed the max execution time of your plan (5 - 20 mins), otherwise the application will terminate it.
 * Local Docker engine. (See [How to install it](https://docs.docker.com/engine/install/))
 * GIT (See how to install [git for windows](https://gitforwindows.org/))
-* Development skills.
+* **Development skills**.
 
 ### Steps
 1. Create your Git repository and clone it locally. If is private you can use a separate SSH key for this project and clone it with a command like
