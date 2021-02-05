@@ -25,7 +25,7 @@ Following the best practices, we are not storing credentials, API keys or other 
 * For business scheduled actions.
 * For servers management or scaling.
 * For profit & fun.
-* **You are not a Developer but you need a tested script ready to run it on your phone?** [Let us know](https://github.com/itforgeuk/Script-Actions/discussions/1)
+* **You are not a Developer but you need a tested script ready to run it from your phone?** [Let us know](https://github.com/itforgeuk/Script-Actions/discussions/1)
 
 ## How to build and test your scripts
 ### Requirements
