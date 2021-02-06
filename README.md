@@ -2,15 +2,15 @@
 Documentation and scripts examples for the [Script Actions App](https://play.google.com/store/apps/details?id=com.itforge.devopstool)
 
 ## Description
-Run or schedule powerful pre-defined shell scripts from your phone in a secure temporary execution cloud environment.
+Run or schedule powerful well tested shell scripts from your phone in a secure temporary execution cloud environment.
 It is a unique solution that provides easy and fast access in a secure execution environment with +100 Linux commands and tools available to use them from the phone with one tap! No laptops, no servers needed. 
 
 **You can build, sell, load and execute scripts from public or private repositories.**
 
 ## Security
-We use Kubernetes. Each execution environment is dedicated with isolated storage, hardware and networking resources. 
+Each execution environment is dedicated with isolated storage, hardware and networking resources.
 The networking allows outbound traffic but inbound traffic is blocked.
-Following the best practices, we are not storing credentials, API keys or other secrets. This information is injected on-demand in the temporary execution environment which is destroyed after the execution.
+Following the best practices, we are not storing credentials, API keys or other secrets. This information is injected on-demand in the temporary execution environment which is destroyed after the execution. Everything is protected behind an OAUTH 2.0 Authentication MFA enabled layer.
 
 ### If you interesting for a PaaS license (private infrastructure) please contact us from the contact form in-app.
 
@@ -79,7 +79,7 @@ Your script is well tested and published to your repo. You can now add it in the
 4. Be sure you have the necessary credentials set in the secret manager.
 5. Set a shedule run if you like.
 6. Save
-7. Your script is ready. Now you can do changes in the repo without edit the script in the app.
+7. Your script is ready. Now you can do changes in the repo without edit the action in the app.
 
 ## Questions
 If you read **all the above** but you still have a question you can [write us](https://github.com/itforgeuk/Script-Actions/discussions/1)
