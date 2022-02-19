@@ -27,6 +27,7 @@
 # https://lnx.azurewebsites.net/non-interactive-login-in-azure-cli-2-0/
 # Create a service principal with the az ad sp create-for-rbac command. 
 # When creating a service principal, you choose the type of sign-in authentication it uses.
+# For AKS, first login locally with "az login", then generate a new kubeconfig with az aks get-credentials -n $AKS_NAME -g $RESGROUP --admin -f ~/.kube/config --overwrite-existing
 
 echo -e "* You can use any cloud cli tool to scale UP or DOWN clusters...\n"
 

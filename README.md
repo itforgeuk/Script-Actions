@@ -56,7 +56,7 @@ Following the best practices, we are not storing credentials, API keys or other 
     > `docker run -it --rm --env-file .env -v /full/path/google-auth.json:/tmp/google-auth.json itforgeuk/scriptactions:latest sh -c '/checkrepo.sh && chmod 755 /tmp/run.sh && /tmp/run.sh'`
 
     > Syntax example with Kubernetes authentication
-    > `docker run -it --rm --env-file .env -v ~/.kube/config:/tmp/config itforgeuk/scriptactions:latest sh -c '/checkrepo.sh && chmod 755 /tmp/run.sh && /tmp/run.sh'`
+    > `docker run -it --rm --env-file .env -v ~/.kube/config:/tmp/kubeconfig itforgeuk/scriptactions:latest sh -c '/checkrepo.sh && chmod 755 /tmp/run.sh && /tmp/run.sh'`
 <!-- TODO: Add run examples for openvpn -->
 
 ### Tips
