@@ -1,3 +1,7 @@
+echo "==================================="
+echo "==     Bash Script example      ==="
+echo "==     Print 100 lines          ==="
+echo "==================================="
 echo "Line 1 Sat 19 Feb 2022 14:11:20 GMT"
 echo "Line 2 Sat 19 Feb 2022 14:11:20 GMT"
 echo "Line 3 Sat 19 Feb 2022 14:11:20 GMT"

@@ -2,7 +2,7 @@
 Documentation and scripts examples for the [Script Actions App](https://play.google.com/store/apps/details?id=com.itforge.devopstool)
 
 ## Description
-Run or schedule powerful well tested shell scripts from your phone in a secure temporary execution cloud environment.
+Run or schedule powerful well tested shell scripts, Python or NodeJS code from your phone in a secure temporary execution cloud environment.
 It is a unique solution that provides easy and fast access in a secure execution environment with +100 Linux commands and tools available to use them from the phone with one tap! No laptops, no servers needed. 
 
 **You can build, sell, load and execute scripts from public or private repositories.**
@@ -30,14 +30,14 @@ Following the best practices, we are not storing credentials, API keys or other 
 ## How to build and test your scripts
 ### Requirements
 * You need a Private or Public GIT repository. If your repository is private, don't forget to set its SSH key in-app secret manager.
-* Be sure the code size in your branch must not exceed 15MB.
-* Your code execution duration must not exceed the max execution time of your plan (5 - 20 mins), otherwise the application will terminate it.
+* The containerazed execution environment is read-only but you can store temp data under /tmp up to 512 MB.
+* Your code execution duration must not exceed 15 mins.
 * Local Docker engine. (See [How to install it](https://docs.docker.com/engine/install/))
 * GIT (See how to install [git for windows](https://gitforwindows.org/))
 * **Development skills**.
 
 ### Steps
-1. Create your Git repository and clone it locally. If is private you can use a separate SSH key for this project and clone it with a command like
+1. Create your Git repository. If is private you can use a separate SSH key for this project and test it with a command like
     >`GIT_SSH_COMMAND="ssh -i ~/.ssh/your-key " git clone git@github.com:youraccount/private-repo.git`
  
     or set core.sshCommand:
@@ -46,23 +46,22 @@ Following the best practices, we are not storing credentials, API keys or other 
 3. Run your script to test it locally:
     > Syntax example for public repository:
 
-    >`docker run -it --rm --env-file .env itforgeuk/scriptactions:latest sh -c '/checkrepo.sh && chmod 755 /tmp/run.sh && /tmp/run.sh'` 
+    >`docker run -it --rm --env-file .env itforgeuk/cloudshell:latest sh -c '/checkrepo.sh'` 
     
     > Syntax example for private repository:
 
-    >`docker run -it --rm --env-file .env -v ~/.ssh/your_ssh_key:/tmp/.ssh/id_rsa itforgeuk/scriptactions:latest sh -c '/checkrepo.sh && chmod 755 /tmp/run.sh && /tmp/run.sh'`
+    >`docker run -it --rm --env-file .env -v ~/.ssh/your_ssh_key:/tmp/.ssh/id_rsa itforgeuk/cloudshell:latest sh -c '/checkrepo.sh'`
 
     > Syntax example with Google Cloud Service Account authentication
-    > `docker run -it --rm --env-file .env -v /full/path/google-auth.json:/tmp/google-auth.json itforgeuk/scriptactions:latest sh -c '/checkrepo.sh && chmod 755 /tmp/run.sh && /tmp/run.sh'`
+    > `docker run -it --rm --env-file .env -v /full/path/google-auth.json:/tmp/google-auth.json itforgeuk/cloudshell:latest sh -c '/checkrepo.sh'`
 
     > Syntax example with Kubernetes authentication
-    > `docker run -it --rm --env-file .env -v ~/.kube/config:/tmp/kubeconfig itforgeuk/scriptactions:latest sh -c '/checkrepo.sh && chmod 755 /tmp/run.sh && /tmp/run.sh'`
-<!-- TODO: Add run examples for openvpn -->
+    > `docker run -it --rm --env-file .env -v ~/.kube/config:/tmp/kubeconfig itforgeuk/cloudshell:latest sh -c '/checkrepo.sh'`
 
 ### Tips
 * Try to minify your script output to get a more practical output in your app.
 * Avoid build steps in your script that can produce data size over limits and slow execution.
-* Test your credentials as env variables which will be the alternative of secrets manager in the app. DO NOT include them in your script only in .env file.
+* Test your credentials as env variables which will be the alternative of secrets manager in the app.
 
 ## How to run your scripts in app
 Your script is well tested and published to your repo. You can now add it in the app:
