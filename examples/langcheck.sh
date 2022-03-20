@@ -9,6 +9,6 @@ PIPV=$(pip --version)
 NODEV=$(node --version)
 NPMV=$(npm --version)
 echo ""
-echo -e "-> Python version: $PYTHONV\nPIP version: $PIPV\nNODEJS version: $NODEV\nNPM version: $NPMV"
+echo -e "-> Python version: $PYTHONV\n-> PIP version: $PIPV\n-> NODEJS version: $NODEV\n-> NPM version: $NPMV"
 echo ""
 echo "## END OF EXECUTION ##"
